@@ -5,7 +5,7 @@ import {
   // CustomersTableType,
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
-import { CreateCustomer } from '@/app/ui/invoices/buttons';
+// import { CreateCustomer } from '@/app/ui/invoices/buttons';
 
 export default async function CustomersTable({
   customers,
@@ -21,7 +21,7 @@ export default async function CustomersTable({
       
       <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
         <Search placeholder="Search customers..." />
-        <CreateCustomer />
+        {/* <CreateCustomer /> */}
       </div>
       <div className="mt-6 flow-root">
         <div className="overflow-x-auto">
