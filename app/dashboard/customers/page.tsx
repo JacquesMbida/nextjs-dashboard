@@ -5,7 +5,7 @@ import Table from '@/app/ui/customers/table';
 // import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
-import { fetchCustomers } from '@/app/lib/data';
+import { fetchCustomersInvoices } from '@/app/lib/data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
  
 export default async function Page() {
-const customers = await fetchCustomers();
+const customers = await fetchCustomersInvoices();
 // console.log('Fetched customers:', customers);
 
 // Map CustomerField[] to FormattedCustomersTable[]
